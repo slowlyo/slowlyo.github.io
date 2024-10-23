@@ -1,0 +1,42 @@
+baseURL: "https://example.org/"
+languageCode: "zh-cn"
+title: "Slowlyo's Note"
+theme: PaperMod
+buildDraft: true
+
+params:
+  defaultTheme: auto
+  disableThemeToggle: true
+  disableSpecial1stPost: true
+  DateFormat: "2006-01-02"
+  hideFooter: true
+  ShowCodeCopyButtons: true
+  UseHugoToc: true
+  comments: false
+  hideSummary: false
+  showToc: true
+  tocOpen: false
+markup:
+  highlight:
+    noClasses: false
+    style: atom-one-dark
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
